@@ -9,7 +9,7 @@ bool is_unique_1(string s)
 {
     int ht[93] = {0}; // can change to char array = size / 4
 
-    for (int i; i < s.length(); i++)
+    for (int i = 0; i < s.length(); i++)
     {
         ht[int(s[i]) - 33] += 1;
     }
@@ -38,7 +38,7 @@ bool is_unique_2(string s)
 
 int main()
 {
-    string test = "!2380954{sgklnxzv}12";
+    string test = "!2380954{sgklnxzv}122";
     cout << is_unique_1(test) << endl;
 
     cout << is_unique_2(test) << endl;
